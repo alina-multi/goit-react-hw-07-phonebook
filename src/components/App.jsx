@@ -1,16 +1,18 @@
+import '../index.css';
+import ContactList from './ContactList/ContactList';
+import FormField from './Form/FormField';
+import Filter from './Filter/Filter';
+
+
 export const App = () => {
   return (
-    <div
-      style={{
-        height: '100vh',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: 40,
-        color: '#010101'
-      }}
-    >
-      React homework template
+    <div className="my-3">
+      <div className="flex flex-col gap-6 max-w-md m-auto">
+        <h1 className="text-3xl font-semibold text-center">Phonebook</h1>
+        <FormField/>
+        <Filter/>
+        <ContactList/>
+      </div>
     </div>
   );
 };
